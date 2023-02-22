@@ -40,7 +40,7 @@ this.window.addEventListener("resize", function() {
 
 
 // Dark mode
-const darkMode = () => (JSON.parse(localStorage.darkMode) || false)
+const darkMode = () => (JSON.parse(localStorage.darkMode || "false"))
 const darkmodeToggle = document.querySelector("#darkmode-toggle")
 
 if (darkMode()) {
